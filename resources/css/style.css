@@ -1,10 +1,19 @@
 html,
 body {
   font-size: 16px;
-  font-family: arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.banner {
+  display: flex;
+  padding: 2rem 0;
+  background-color: #ffffff;
+}
 
 /*------------------------ Header ----------------------------*/
 header {
@@ -13,7 +22,6 @@ header {
   width: auto;
   height: 4rem;
   background-color: #ffffff;
-  border: 1px solid black;
 }
 
 /* company name & logo */
@@ -22,10 +30,14 @@ header {
   align-items: center;
   height: 2rem;
   margin-left: 1.5rem;
-  font-weight: bold;
+  font-size: 1.25rem;
 }
 
-/* title color */
+/* title colors and weight*/
+#black {
+  font-weight: 600;
+}
+
 #grey {
   color: #D5D8DC;
 }
@@ -44,17 +56,16 @@ nav li {
 }
 
 /*------------------------- Banner #1 ---------------------------*/
-.banner {
-  display: flex;
-  align-items: center;
+#one.banner {
   background-color: #D5D8DC;
-  padding: 2rem 0;
+  align-items: center;
 }
 
 .image-content {
   max-width: 60%;
   overflow: hidden;
-  margin: 0 1.5rem;
+  margin-left: 2rem;
+  border: 1px solid black;
 }
 
 .image-content img {
@@ -64,18 +75,19 @@ nav li {
 }
 
 .text-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 4rem;
+  max-width: 30%;
+  margin-left: 2.5rem;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
+  font-weight: 700;
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  margin: 2rem 0;
+  line-height: 1.4;
 }
 
 .btn {
@@ -83,6 +95,129 @@ h3 {
   color: #ffffff;
   width: 100%;
   text-align: center;
+  padding: 0.75rem 0;
 }
 
+.btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn a:hover {
+  color: #333e62;
+}
+
+.text-content h3 {
+  margin 1.5rem 0;
+}
 /*----------------------- Banner #2 ------------------------*/
+.information {
+  max-width: 40%;
+}
+
+.image-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.image-content span {
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+#emanuel {
+  margin: 2rem 0;
+  font-size: 0.7;
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  border: 1px solid black;
+  max-height: 30%;
+}
+
+.small-image {
+  max-width: 35%
+  overflow:hidden;
+  margin: 1rem;
+}
+
+.small-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.text span {
+  font-size: 0.8rem;
+  font-weight: 0.9;
+}
+
+.text a {
+  text-decoration: none;
+  color: #009fdf;
+  font-size: 0.8rem;
+  font-weight: 0.9;
+}
+/*----------------------- Banner #3 ------------------------*/
+#three.banner {
+  background-color: #D5D8DC;
+}
+
+#three.banner h3 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.course-content {
+  display: flex;
+}
+
+.course {
+  margin: 1rem;
+}
+
+.medium-image {
+  max-width: 25%
+  overflow:hidden;
+}
+
+.medium-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*----------------------- Banner #4 ------------------------*/
+.column {
+  max-width: 60%;
+  overflow: hidden;
+}
+
+.column video {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+/*----------------------- Footer ------------------------*/
+footer {
+  display: flex;
+  border-top: 1px solid #D5D8DC;
+  font-size: 0.8rem;
+  height: 5rem;
+}
+
+footer span {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
